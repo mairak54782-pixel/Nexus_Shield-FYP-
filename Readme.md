@@ -76,12 +76,6 @@ Open `config.js` and set your machine's local network IP (from `ipconfig` / `ifc
 npx expo start
 ```
 
-## Known limitations / what I'd fix with more time
-
-- Passwords in `auth.py` are stored as-is right now — `passlib` is already a dependency, hashing just hasn't been wired in yet.
-- The backend URL is a local IP, so the app only works on the same network as the machine running the server. A real deployment (Render/Railway) would fix this.
-- The phishing model runs in-process inside the FastAPI app — fine for a demo, not how I'd serve it at any real scale.
-
 ## A note on the phishing detection
 
 This is built for awareness and education, not as a guaranteed security layer. It'll catch a lot, but "proceed with caution" means exactly that — use your own judgment on anything it doesn't confidently clear.
