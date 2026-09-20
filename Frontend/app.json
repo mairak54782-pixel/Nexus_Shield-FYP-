@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "NexusShield",
+    "slug": "nexusshield",
+    "version": "1.0.0",
+    "platforms": ["ios", "android", "web"],
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/nexus_icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/nexus_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1E3A"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.laibagul.nexusshield",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/nexus_icon.png",
+        "backgroundColor": "#0B1E3A"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-web-browser",
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraMavenRepos": [
+              "../../node_modules/@notifee/react-native/android/libs"
+            ]
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d75b3243-4521-419d-92d2-3bbd3b66976f"
+      }
+    }
+  }
+}

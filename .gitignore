@@ -1,0 +1,38 @@
+# ─── Secrets - never commit ──────────────────────────
+.env
+backend/.env
+**/firebase-key.json
+**/google-services.json
+**/GoogleService-Info.plist
+*.pem
+*.key
+
+# ─── Python (backend) ─────────────────────────────────
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ─── Node / React Native / Expo (Frontend) ────────────
+node_modules/
+.expo/
+.expo-shared/
+npm-debug.log*
+yarn-error.log*
+
+# ─── Android build artifacts ──────────────────────────
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# ─── OS / editor ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
